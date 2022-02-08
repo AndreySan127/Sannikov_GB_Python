@@ -1,0 +1,64 @@
+Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+Name: Pillow
+Version: 9.0.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\users\user\appdata\local\programs\python\python310\lib\site-packages
+Requires:
+Required-by:
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4>
+
+Установить самую свежую версию pillow, если ранее она не была установлена.
+Successfully installed Pillow-9.0.1
+
+Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow.
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4\virt\Scripts> C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4\virt\Scripts\activate.bat
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4\virt\Scripts>
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4\virt\Scripts> pip freeze
+asgiref==3.5.0
+certifi==2021.10.8
+chardet==3.0.4
+charset-normalizer==2.0.11
+Django==4.0.2
+googletrans==3.0.0
+h11==0.9.0
+h2==3.2.0
+hpack==3.0.0
+hstspreload==2021.12.1
+httpcore==0.9.1
+httpx==0.13.3
+hyperframe==5.2.0
+idna==2.10
+Pillow==9.0.1
+requests==2.27.1
+rfc3986==1.5.0
+sniffio==1.2.0
+sqlparse==0.4.2
+tzdata==2021.5
+urllib3==1.26.8
+
+Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4> pip uninstall Pillow
+Found existing installation: pillow 9.0.1
+Uninstalling pillow-9.0.1:
+  Would remove:
+    c:\users\user\appdata\local\programs\python\python310\lib\site-packages\pil\*
+    c:\users\user\appdata\local\programs\python\python310\lib\site-packages\pillow-9.0.1.dist-info\*
+Proceed (Y/n)? y
+  Successfully uninstalled pillow-9.0.1
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4>
+
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4> pip instal pillov==8.4.0
+ERROR: unknown command "instal" - maybe you meant "install"
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4> pip install pillow==8.4.0
+Collecting pillow==8.4.0
+  Downloading Pillow-8.4.0-cp310-cp310-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 939 kB/s
+Installing collected packages: pillow
+Successfully installed pillow-8.4.0
+
+Деактивировать виртуальное окружение.
+PS C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4> C:\Users\User\PycharmProjects\pythonProject\Sannikov_Andrey_DZ_4\virt\Scripts\deactivate.bat
