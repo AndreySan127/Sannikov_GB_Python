@@ -11,18 +11,18 @@ def prepare_dataset(path_users_file: str, path_hobby_file: str) -> dict:
        :return: Dict(str: Union[List[str]|None])
        """
     # Ваш код пишите здесь
-    with open(path_users_file, 'r' , encoding='utf-8') as users, open(path_hobby_file, 'r', encoding='utf-8') as hobbi:
-    s = []
-    f = []
-    for text1 in users:
-        s.append(text1.replace(",", '').strip())
+    with open(path_users_file, 'r' , encoding='utf-8') as users, open(path_hobby_file, 'r',encoding='utf-8') as hobby:
+        s = []
+        f = []
+        for text1 in users:
+             s.append(text1.replace(",", ' ').strip())
 
-    for text2 in hobbi:
-        f.append(text2. strip())
-    if len(s) < len(f):
-        raise SystemExit(1)
+        for text2 in hobby:
+            f.append(text2. strip())
+        if len(s) < len(f):
+            sys.exit (1)
 
-a = dict(zip_longest(s, f, fillvalue=none))
+    a = dict(zip_longest(s, f, fillvalue=None))
 
 
     return a # верните словарь, либо завершите исполнение программы кодом 1
