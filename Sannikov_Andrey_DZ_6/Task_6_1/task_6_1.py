@@ -16,6 +16,6 @@ def find_spamer(parsed_log):
 
 
 if __name__ == "__main__":
-   a = get_parse_attrs("./nginx_logs.txt")
+   a = get_parse_attrs("nginx_logs.txt")
    for e in a:
        print(e)
