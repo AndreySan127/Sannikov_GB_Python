@@ -15,3 +15,10 @@
 -- каждый из двух алгоритмов нужно оформить в виде отдельной ф-ции
 -- проставьте сложности каждого выражения в двух ваших алгоритмах
 """
+def list_min_s(lst):
+    min_value = lst[0]
+    for i in lst:
+        if i < min_value:
+            min_value = i
+    return min_value
+
